@@ -676,46 +676,6 @@
 
 
     <script src="js/app.js"></script>
-<script>
-/* =====================================================
-   FORÇAR LOGIN AO ABRIR O SISTEMA
-   ===================================================== */
 
-(function () {
-
-    function mostrarTelaLogin() {
-
-        const login = document.getElementById("loginPage");
-        const cadastro = document.getElementById("registerPage");
-        const dashboard = document.getElementById("dashboardPage");
-
-        if (login) {
-            login.classList.remove("hidden");
-            login.style.display = "";
-        }
-
-        if (cadastro) {
-            cadastro.classList.add("hidden");
-            cadastro.style.display = "none";
-        }
-
-        if (dashboard) {
-            dashboard.classList.add("hidden");
-            dashboard.style.display = "none";
-        }
-
-    }
-
-    // Executa imediatamente
-    mostrarTelaLogin();
-
-    // Executa novamente quando a página terminar de carregar
-    window.addEventListener("load", mostrarTelaLogin);
-
-    // Garante que o login continue sendo a primeira tela
-    document.addEventListener("DOMContentLoaded", mostrarTelaLogin);
-
-})();
-</script>
 </body>
 </html>
